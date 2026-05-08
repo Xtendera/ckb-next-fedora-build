@@ -247,6 +247,17 @@ else ()
     message(STATUS "*** SIZEOF void * != 8, so not 64-bit")
 endif ()
 
+set(CPACK_RPM_EXCLUDE_FROM_AUTO_FILELIST_ADDITION
+    /lib
+    /lib64
+    /usr
+    /usr/bin
+    /usr/lib
+    /usr/lib64
+    /usr/share
+    /usr/share/doc
+)
+
 set(CPACK_GENERATOR "DEB")
 set(CPACK_PACKAGE_NAME "ckb-next")
 set(CPACK_PACKAGE_VENDOR "K DeSouza")
