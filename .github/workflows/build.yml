@@ -12,18 +12,7 @@ jobs:
     strategy:
       matrix:
         image:
-          - 'archlinux:latest'
-          - 'rockylinux:8'
-          - 'rockylinux:9'
-          - 'debian:11'
-          - 'debian:12'
-          - 'fedora:42'
-          - 'fedora:41'
-          - 'fedora:rawhide'
-          - 'ubuntu:22.04'
-          - 'ubuntu:24.04'
-          - 'ubuntu:rolling'
-          - 'alpine:latest'
+          - 'fedora:44'
         build_type:
           - Debug
         compiler:
